@@ -812,7 +812,7 @@ function main () {
 			
 			// cap speed
 			let vm = vec3.sqrLen(this.velocity);
-			let speed = 15.0;
+			let speed = Infinity;
 			if (vm > speed * speed) {
 				vm = speed / Math.sqrt(vm);
 				this.velocity[0] *= vm;
