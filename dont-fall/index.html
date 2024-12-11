@@ -163,7 +163,7 @@ don't fall
 	uniform sampler2D u_blurred;
 	out vec4 o_color;
 	void main () {
-		o_color = texture(u_blurred, v_position) + texture(u_original, v_position);
+		o_color = texture(u_blurred, v_position) + texture(u_blurred, v_position) + texture(u_blurred, v_position) + texture(u_original, v_position);
 	}
 </script>
 
